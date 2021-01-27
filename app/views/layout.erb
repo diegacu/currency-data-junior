@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="<%= url('/css/app.css') %>" rel="stylesheet" type="text/css" >
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div id="navigation">
+				<ul>
+					<li><a href="/"><img class="menu-icon" src="<%= url('/images/digital-exchange.png') %>"></img></a></li>
+					<li><a class="menu-link" href="/">Exchange money</a></li>
+					<li><a class="menu-link" href="/conversion">Table of conversions</a></li>
+				</ul>
+            </div>
+            <%= yield %>
+		</div>
+		<div class="footer">
+			<a href="/"><img class="footer-icon" src="<%= url('/images/digital-exchange.png') %>"></img></a>
+			<div>Icons designed by <a href="https://www.flaticon.es/autores/nhor-phai" title="Nhor Phai">Nhor Phai</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+			<div>Icons made by <a href="https://www.flaticon.com/authors/smartline" title="Smartline">Smartline</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+			<div>Icons made by <a href="https://smashicons.com/" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+		<div>
+    </body>
+</html>

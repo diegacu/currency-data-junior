@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<div class="table-container">
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Quantity to convert</th>
+      <th scope="col">Currency to convert</th>
+      <th scope="col">Result quantity</th>
+      <th scope="col">Result currency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @conversions.each do |conversion|%>
+        <tr>
+            <th scope="row"> <%= conversion.id %> </th>
+            <td> <%= conversion.from_quantity %> </td>
+            <td><%= conversion.from_currency %></td>
+            <td><%= conversion.to_quantity %></td>
+            <td> <%= conversion.to_currency %></td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>

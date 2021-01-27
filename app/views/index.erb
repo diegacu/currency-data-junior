@@ -1,0 +1,30 @@
+<script type="text/javascript" src="<%= url('/js/conversor.js') %>"></script>
+<div class="conversor-titles" >
+	<h2> Currency Convertor </h2>
+	<h3> Welcome to the currency convertor application, convert from EUR to USD/CHF or vice versa </h3>
+</div>
+<div id="convertorContainer">
+	<form id="convert_form" action="run">
+		<label> Amount: </label>
+		<input id="amount" name="amount" placeholder="1.00"/>
+		<label> From: </label>
+		<select id="currency_from">
+			<option value="EUR"> EUR </option>
+			<option value="USD"> USD </option>
+			<option value="CHF"> CHF </option>
+		</select>
+		<a id="exchange"><img class="exchange-image" src="<%= url('/images/exchange.png') %>"></img> </a>
+		<label>To:</label>
+		<select id="currency_to">
+			<option value="USD"> USD </option>
+			<option value="CHF"> CHF </option>
+		</select>
+		<a id="submit"><img class="submit-image" src="<%= url('/images/forward.png') %>"></img> </a>
+	</form>
+	<div id="result">
+		<label id="result_title"></label>
+		<label id="result_quantity"></label>
+		<label id="error_text"></label>
+	</div>
+</div>
+

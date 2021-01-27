@@ -1,0 +1,179 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/*Navbar*/
+
+#navigation {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+.menu-link{
+    font-family: Arial,sans-serif !important;
+    font-size: medium;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color:white !important;
+}
+
+.menu-link:hover{
+    text-decoration: none;
+    background-color: #002A53;
+}
+
+.menu-icon{
+    width:50px;
+    margin-left: 20px;
+    margin-right: 70px;
+    margin-top: 10px;
+}
+
+/*Conversor View CSS*/
+
+#container{
+    background-image: url("../images/background-convertion.jpg");
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin-top: 0px;
+}
+
+#pageTitle{
+    text-align: center;
+}
+
+#convertorContainer{
+    text-align: center;
+    background-color: white;
+    border-radius: 11.5px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+#convertorContainer input,  #convertorContainer select{
+    width: 20%;
+    height: 50px;
+    border-radius: 9px;
+    margin-top: 20px;
+    border:1px solid black
+}
+
+#convertorContainer input:focus,  #convertorContainer select:focus{
+    outline: none;
+}
+
+.conversor-titles{
+    color:white;
+    text-align: center;
+}
+
+
+#convertorContainer form {
+    padding-top: 50px;
+    height: 100px;
+}
+
+form label {
+    position: absolute;
+    font-weight: bold;
+    color: black;
+}
+
+.exchange-image{
+    position: relative;
+    top:5px;
+    height: 25px;
+}
+
+.submit-image{
+    position: relative;
+    height: 35px;
+    top: 10px;
+}
+
+#result {
+    display: none;
+    text-align: left;
+    color:black;
+}
+
+#result_title {
+    font-size: large;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#result_quantity{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+#error_text{
+    color: red;
+    font-size: large;
+    font-weight: bold;
+}
+
+/*Table View CSS*/
+
+.table-container {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    background-color: white;
+    color: black;
+}
+
+/*Footer*/
+
+.footer {
+    font-family: Arial,sans-serif !important;
+    font-size: medium !important;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top:75vh;
+    width: 100%;
+    background-color: #002A53;
+    color: white;
+    text-align: center;
+    border-top: 2px solid white;
+    padding-top: 20px;
+ }
+
+.footer a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: white;
+    
+}
+ .footer-icon {
+    width:80px;
+ }
