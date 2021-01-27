@@ -14,3 +14,6 @@ The API key is also defined in `config/environment.rb`, please use an own API ke
 # 2. Run the project
 To run this starter project, simply execute `rackup` in your console
 
+# 3. Notes
+The project is done with my own CSS, Bootstrap and JavaScript using JQuery. Bootstrap and JQuery libraries are added by using the .css and .js files from their official webpage. This was made so the download of .css and .js files was not necessary.
+The images and icons used are all free licensed.
