@@ -54,15 +54,12 @@ $(document).ready(function() {
             to_currency: to_currency
         }
         let send = JSON.stringify(obj)
-        console.log(send);
-        console.log($("#amount").val());
 
         let display = $("#result").css('display')
 
         if(!isNaN(amount) && amount) {
            $.post("/run",send)
            .done(function(result) {
-               console.log(result)
                 if(!isNaN(amount)){
                     $("#error_text").empty();
                     $("#result_title").empty();
@@ -72,7 +69,6 @@ $(document).ready(function() {
                     if(display == "none"){
                         $("#result").slideToggle("slow")
                     }
-                    console.log(result)
                 }
                 else{
                     console.error(result)
